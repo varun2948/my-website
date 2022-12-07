@@ -165,7 +165,7 @@
 			if($('.gallery_grid').length > 0){
 				$('.gallery_grid').isotope({
 						itemSelector: '.grid-item',
-						filter: '*'
+						filter: '.development'
 					});
 					$('.port_project_gallery > .gallery_nav > ul > li').on( 'click', 'a', function() {
 						// filter button click
@@ -260,6 +260,7 @@
 	circle_progressbar: function() {
 		if($('.progressbar').length > 0){
 			$(document).ready(function(){
+				$('#all_click').click();
 				function animateElements() {
 					$('.progressbar').each(function () {
 						var elementPos = $(this).offset().top;
